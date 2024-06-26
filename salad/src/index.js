@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import AppClaude from './AppClaude';
 import reportWebVitals from './reportWebVitals';
-import AppGPT from './AppGPT';
+import AppGPT from './components-GPT/AppGPT';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppGPT />
+    <AppGPT/>
   </React.StrictMode>
 );
 

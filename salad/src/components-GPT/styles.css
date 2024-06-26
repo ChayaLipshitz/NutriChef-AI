@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #eaf2e3;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.rtl .header select {
+  direction: rtl;
+}
+
+.rtl .container {
+  flex-direction: row-reverse;
+}
+
+h1 {
+  text-align: center;
+  color: #3a3a3a;
+  transition: color 0.5s ease;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.left-section {
+  width: 65%;
+}
+
+.right-section {
+  width: 30%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.ingredient-list, .selected-ingredients {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ingredient-list:hover, .selected-ingredients:hover {
+  transform: scale(1.02);
+}
+
+.ingredient-list h2, .selected-ingredients h2 {
+  font-size: 18px;
+  margin-top: 0;
+  color: #3a3a3a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.add-button {
+  background-color: white;
+  color: #3a3a3a;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.input-amount {
+  width: 60px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.nutrition-summary {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition-summary p {
+  margin: 5px 0;
+  color: #3a3a3a;
+}

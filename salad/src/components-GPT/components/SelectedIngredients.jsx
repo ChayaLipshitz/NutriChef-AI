@@ -1,15 +1,15 @@
 import React from 'react';
 
-const SelectedIngredients = ({ ingredients, updateIngredientAmount, removeIngredient }) => {
+const SelectedIngredients = ({ ingredients, updateIngredientAmount, removeIngredient, text }) => {
   return (
     <div className="selected-ingredients">
-      <h2>Selected Ingredients</h2>
+      <h2>{text.selectedIngredients}</h2>
       <table>
         <thead>
           <tr>
-            <th>Ingredient</th>
-            <th>Amount (g)</th>
-            <th>Actions</th>
+            <th>{text.ingredients}</th>
+            <th>{text.totalWeight} (g)</th>
+            <th>{text.actions}</th>
           </tr>
         </thead>
         <tbody>
@@ -25,7 +25,7 @@ const SelectedIngredients = ({ ingredients, updateIngredientAmount, removeIngred
                 />
               </td>
               <td>
-                <button onClick={() => removeIngredient(ingredient.name)}>Remove</button>
+                <button onClick={() => removeIngredient(ingredient.name)}>{text.remove}</button>
               </td>
             </tr>
           ))}
