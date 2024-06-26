@@ -1,0 +1,66 @@
+.foodBuilder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  .title {
+    width: 100%;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .ingredientsList, .selectedIngredients, .nutritionInfo {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 30%;
+  }
+  
+  .ingredientItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .addButton, .removeButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .addButton:hover, .removeButton:hover {
+    background-color: #45a049;
+  }
+  
+  .removeButton {
+    background-color: #f44336;
+  }
+  
+  .removeButton:hover {
+    background-color: #d32f2f;
+  }
+  
+  .amountInput {
+    width: 60px;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+  }
+  
+  .nutritionInfo ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nutritionInfo li {
+    margin-bottom: 0.5rem;
+  }

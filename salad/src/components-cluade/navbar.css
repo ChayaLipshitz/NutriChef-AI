@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .navList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navItem {
+    margin: 0 1rem;
+  }
+  
+  .navButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .navButton:hover {
+    background-color: #555;
+  }
+  
+  .langSelect {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .he .langSelect {
+    left: 1rem;
+    right: auto;
+  }
