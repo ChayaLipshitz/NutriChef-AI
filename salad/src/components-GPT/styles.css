@@ -138,3 +138,140 @@ th {
   margin: 5px 0;
   color: #3a3a3a;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f8ea;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.ingredients-list, .salad-bowl, .nutrition-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.ingredients-list:hover, .salad-bowl:hover, .nutrition-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.ingredients-list {
+  width: 100%;
+  max-width: 350px;
+}
+
+.salad-bowl {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.ingredients-list h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  font-size: 0.9em;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.8em;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.nutrition-info {
+  width: 100%;
+}
+
+#languageSelect {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+[dir="rtl"] .salad-bowl {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+/* Add styles for the navbar */
+.navbar {
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #555;
+}

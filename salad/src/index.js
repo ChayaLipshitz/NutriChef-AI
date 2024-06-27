@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AppClaude from './AppClaude';
+import AppClaude from './cluade/AppClaude';
 import reportWebVitals from './reportWebVitals';
 import AppGPT from './components-GPT/AppGPT';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* <AppClaude/> */}
     <AppGPT/>
   </React.StrictMode>
 );

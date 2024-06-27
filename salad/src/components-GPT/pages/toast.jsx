@@ -19,10 +19,8 @@ const toastIngredients = {
       { name: 'גבינה', calories: 402, fats: 33.1, sugar: 0.5, carbs: 1.3, fiber: 0 },
       { name: 'עגבנייה', calories: 18, fats: 0.2, sugar: 2.6, carbs: 3.9, fiber: 1.2 },
       { name: 'אבוקדו', calories: 160, fats: 14.7, sugar: 0.7, carbs: 8.5, fiber: 6.7 },
-      { name: 'חזיר', calories: 145, fats: 5.5, sugar: 0.6, carbs: 1.5, fiber: 0 },
     ]
   };
-  
 
 const Toast = () => {
   const { language } = useContext(LanguageContext);

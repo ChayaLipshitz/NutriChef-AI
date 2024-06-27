@@ -15,7 +15,6 @@ const meatIngredients = {
     ],
     he: [
       { name: 'בקר', calories: 250, fats: 15, sugar: 0, carbs: 0, fiber: 0 },
-      { name: 'חזיר', calories: 242, fats: 14, sugar: 0, carbs: 0, fiber: 0 },
       { name: 'כבש', calories: 294, fats: 21, sugar: 0, carbs: 0, fiber: 0 },
       { name: 'הודו', calories: 189, fats: 7.4, sugar: 0, carbs: 0, fiber: 0 },
       { name: 'ירך עוף', calories: 209, fats: 11.2, sugar: 0, carbs: 0, fiber: 0 },
