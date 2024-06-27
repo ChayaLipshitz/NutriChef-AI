@@ -37,7 +37,7 @@ To get started with NutriChef, follow these steps:
 
 1. Clone the repository:
    \`\`\`bash
-   git clone https://github.com/yourusername/nutrichef.git
+   git clone [https://github.com/yourusername/nutrichef.git](https://github.com/ChayaLipshitz/NutriChef-AI.git)
    \`\`\`
 2. Navigate to the project directory:
    \`\`\`bash
@@ -90,7 +90,7 @@ We welcome contributions from the community! If you'd like to contribute to Nutr
 
 ## Contact
 
-For questions or feedback, please reach out to [chl4165772@gmail.com](mailto:yourname@example.com).
+For questions or feedback, please reach out to [chl4165772@gmail.com](mailto:chl4165772@gmail.com).
 
 ---
 
