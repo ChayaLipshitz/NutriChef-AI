@@ -1,5 +1,5 @@
-.App {
-  font-family: 'Brush Script MT', cursive;
+.App-claude {
+  font-family: 'Garamond', cursive;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -41,7 +41,7 @@ button {
   color: white;
   border: none;
   border-radius: 25px;
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Garamond', cursive;
   font-size: 1em;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -96,6 +96,10 @@ h2 {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e6d7bf;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .selected-ingredient input {
@@ -103,6 +107,41 @@ h2 {
   margin: 0 10px;
 }
 
+.selected-ingredient span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+
 .he {
   direction: rtl;
+}
+
+.amount-input {
+  width: 60px;
+  padding: 5px;
+  border: 2px solid #8d6e63;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f9f3e6;
+  color: #5d4037;
+  transition: all 0.3s ease;
+}
+
+.amount-input:focus {
+  outline: none;
+  border-color: #5d4037;
+  box-shadow: 0 0 5px rgba(93, 64, 55, 0.5);
+}
+
+.amount-input::-webkit-inner-spin-button,
+.amount-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.amount-input[type=number] {
+  -moz-appearance: textfield;
 }

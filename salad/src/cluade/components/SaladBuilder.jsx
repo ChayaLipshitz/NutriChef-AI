@@ -57,10 +57,12 @@ function SaladBuilder({ language }) {
         {selectedIngredients.map((ingredient, index) => (
           <div key={index} className="selected-ingredient">
             <span>{language === 'en' ? ingredient.name : ingredient.namehe}</span>
-            <input 
-              type="number" 
-              value={ingredient.amount} 
-              onChange={(e) => updateAmount(index, parseInt(e.target.value))} 
+            <input
+              className="amount-input"
+              type="number"
+              value={ingredient.amount}
+              onChange={(e) => updateAmount(index, parseInt(e.target.value))}
+              min="0"
             />
             <span>g</span>
             <button onClick={() => removeIngredient(index)}>

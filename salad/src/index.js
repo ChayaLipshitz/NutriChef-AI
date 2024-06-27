@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import AppClaude from './cluade/AppClaude';
 import reportWebVitals from './reportWebVitals';
-import AppGPT from './components-GPT/AppGPT';
+import AppGPT from './GPT/AppGPT';
+import './GPT/styles.css'
+// import './cluade/App.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <AppClaude/> */}
-    <AppGPT/>
+    <AppClaude/>
+    {/* <AppGPT/> */}
   </React.StrictMode>
 );
 

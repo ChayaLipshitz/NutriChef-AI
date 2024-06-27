@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 const ingredients = [
-    { name: "Bread slice", namehe: "פרוסת לחם", calories: 79, protein: 3, fat: 1, carbs: 15 },
-    { name: "Cheese slice", namehe: "פרוסת גבינה", calories: 113, protein: 7, fat: 9, carbs: 0.4 },
-    { name: "Tomato slice", namehe: "פרוסת עגבניה", calories: 3, protein: 0.2, fat: 0, carbs: 0.7 },
-    { name: "Butter", namehe: "חמאה", calories: 102, protein: 0.1, fat: 11, carbs: 0 },
-  ];
+  { name: "Bread slice", namehe: "פרוסת לחם", calories: 79, protein: 3, fat: 1, carbs: 15 },
+  { name: "Cheese slice", namehe: "פרוסת גבינה", calories: 113, protein: 7, fat: 9, carbs: 0.4 },
+  { name: "Tomato slice", namehe: "פרוסת עגבניה", calories: 3, protein: 0.2, fat: 0, carbs: 0.7 },
+  { name: "Butter", namehe: "חמאה", calories: 102, protein: 0.1, fat: 11, carbs: 0 },
+];
 
 function ToastBuilder({ language }) {
   const [selectedIngredients, setSelectedIngredients] = useState([]);
@@ -52,15 +52,17 @@ function ToastBuilder({ language }) {
         </div>
       </div>
       <div className="curly-frame">
-      <h2>{language === 'en' ? 'Your meal' : 'המנה שלך'}</h2>
-      {selectedIngredients.map((ingredient, index) => (
+        <h2>{language === 'en' ? 'Your meal' : 'המנה שלך'}</h2>
+        {selectedIngredients.map((ingredient, index) => (
           <div key={index} className="selected-ingredient">
             <span>{language === 'en' ? ingredient.name : ingredient.namehe}</span>
-            <input 
-              type="number" 
-              value={ingredient.amount} 
-              onChange={(e) => updateAmount(index, parseInt(e.target.value))} 
-            />
+            <input
+              className="amount-input"
+              type="number"
+              value={ingredient.amount}
+              onChange={(e) => updateAmount(index, parseInt(e.target.value))}
+              min="0"
+            />  
             <span>g</span>
             <button onClick={() => removeIngredient(index)}>
               {language === 'en' ? 'Remove' : 'הסר'}

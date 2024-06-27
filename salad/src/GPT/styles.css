@@ -215,6 +215,30 @@ button:hover {
   transform: scale(1.05);
 }
 
+.ingredient-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-button {
+  background-color: white;
+  color: #3a3a3a;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+
 .nutrition-info {
   width: 100%;
 }

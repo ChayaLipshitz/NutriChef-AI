@@ -6,9 +6,9 @@ const IngredientList = ({ ingredients, addIngredient, text }) => {
       <h2>{text.ingredients}</h2>
       <ul>
         {ingredients.map((ingredient) => (
-          <li key={ingredient.name}>
-            <div>
-              {ingredient.name} 
+          <li key={ingredient.name} className="ingredient-item">
+            <div className="ingredient-info">
+              {ingredient.name}
             </div>
             <button className="add-button" onClick={() => addIngredient(ingredient)}>{text.add}</button>
           </li>

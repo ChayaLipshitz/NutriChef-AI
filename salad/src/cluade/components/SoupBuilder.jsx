@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 const ingredients = [
-    { name: "Chicken broth", namehe: "ציר עוף", calories: 15, protein: 1, fat: 1, carbs: 0 },
-    { name: "Carrots", namehe: "גזר", calories: 41, protein: 0.9, fat: 0.2, carbs: 10 },
-    { name: "Celery", namehe: "סלרי", calories: 16, protein: 0.7, fat: 0.2, carbs: 3 },
-    { name: "Onions", namehe: "בצל", calories: 40, protein: 1.1, fat: 0.1, carbs: 9 },
-    { name: "Noodles", namehe: "אטריות", calories: 138, protein: 5, fat: 0.5, carbs: 25 },
-  ];
-  
+  { name: "Chicken broth", namehe: "ציר עוף", calories: 15, protein: 1, fat: 1, carbs: 0 },
+  { name: "Carrots", namehe: "גזר", calories: 41, protein: 0.9, fat: 0.2, carbs: 10 },
+  { name: "Celery", namehe: "סלרי", calories: 16, protein: 0.7, fat: 0.2, carbs: 3 },
+  { name: "Onions", namehe: "בצל", calories: 40, protein: 1.1, fat: 0.1, carbs: 9 },
+  { name: "Noodles", namehe: "אטריות", calories: 138, protein: 5, fat: 0.5, carbs: 25 },
+];
+
 function SoupBuilder({ language }) {
   const [selectedIngredients, setSelectedIngredients] = useState([]);
 
@@ -53,14 +53,16 @@ function SoupBuilder({ language }) {
         </div>
       </div>
       <div className="curly-frame">
-      <h2>{language === 'en' ? 'Your meal' : 'המנה שלך'}</h2>
-      {selectedIngredients.map((ingredient, index) => (
+        <h2>{language === 'en' ? 'Your meal' : 'המנה שלך'}</h2>
+        {selectedIngredients.map((ingredient, index) => (
           <div key={index} className="selected-ingredient">
             <span>{language === 'en' ? ingredient.name : ingredient.namehe}</span>
-            <input 
-              type="number" 
-              value={ingredient.amount} 
-              onChange={(e) => updateAmount(index, parseInt(e.target.value))} 
+            <input
+              className="amount-input"
+              type="number"
+              value={ingredient.amount}
+              onChange={(e) => updateAmount(index, parseInt(e.target.value))}
+              min="0"
             />
             <span>g</span>
             <button onClick={() => removeIngredient(index)}>

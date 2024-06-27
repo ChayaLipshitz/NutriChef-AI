@@ -7,7 +7,6 @@ import Fish from './pages/fish';
 import Toast from './pages/toast';
 import Navbar from './components/NavBar';
 import { LanguageContext, LanguageProvider } from './LanguageContext';
-import './styles.css';
 
 function App() {
   const { language, toggleLanguage } = useContext(LanguageContext);

@@ -1,3 +1,4 @@
+
 # NutriChef
 
 **NutriChef** is an innovative app designed to showcase the capabilities of advanced NLP (Natural Language Processing) programs, specifically Claude and GPT. The main purpose of NutriChef is to demonstrate how these AI technologies can assist users in creating personalized meals by selecting ingredients and providing detailed nutritional information.
@@ -35,5 +36,62 @@ Whether you're a health enthusiast, a curious cook, or someone interested in AI 
 To get started with NutriChef, follow these steps:
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/ChayaLipshitz/nutrichef.git
+   \`\`\`bash
+   git clone https://github.com/yourusername/nutrichef.git
+   \`\`\`
+2. Navigate to the project directory:
+   \`\`\`bash
+   cd nutrichef
+   \`\`\`
+3. Install the dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
+4. Run the app:
+   \`\`\`bash
+   npm start
+   \`\`\`
+
+## Switching Between GPT and Claude Components
+
+To switch between the GPT and Claude components in NutriChef, follow these steps:
+
+1. Open the \`index.js\` file in the project directory.
+2. Choose the desired component (GPT or Claude) by uncommenting the respective import statement and commenting out the other. For example:
+   \`\`\`javascript
+   // Choose GPT component
+    {/* <AppClaude/> */}
+    <AppGPT/>
+
+   // Import GPT component's CSS
+   import './GPT/styles.css'
+   // import './cluade/App.css';
+   \`\`\`
+   To switch to Claude, simply reverse the comments:
+   \`\`\`javascript
+   // Choose GPT component
+   <AppClaude/>
+    {/* <AppGPT/> */}
+
+   // Import GPT component's CSS
+   //  import './GPT/styles.css'
+   import './cluade/App.css';
+   \`\`\`
+
+3. Save the \`index.js\` file and restart the app:
+   \`\`\`bash
+   npm start
+   \`\`\`
+
+## Contributing
+
+We welcome contributions from the community! If you'd like to contribute to NutriChef, please fork the repository and create a pull request with your changes.
+
+
+## Contact
+
+For questions or feedback, please reach out to [chl4165772@gmail.com](mailto:yourname@example.com).
+
+---
+
+Thank you for using NutriChef! Enjoy your personalized meal planning experience with the power of AI.

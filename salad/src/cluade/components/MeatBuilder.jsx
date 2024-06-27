@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 const ingredients = [
-    { name: "Beef steak", namehe: "סטייק בקר", calories: 271, protein: 26, fat: 18, carbs: 0 },
-    { name: "Potatoes", namehe: "תפוחי אדמה", calories: 77, protein: 2, fat: 0.1, carbs: 17 },
-    { name: "Broccoli", namehe: "ברוקולי", calories: 31, protein: 2.5, fat: 0.4, carbs: 6 },
-    { name: "Garlic", namehe: "שום", calories: 149, protein: 6.4, fat: 0.5, carbs: 33 },
-  ];
+  { name: "Beef steak", namehe: "סטייק בקר", calories: 271, protein: 26, fat: 18, carbs: 0 },
+  { name: "Potatoes", namehe: "תפוחי אדמה", calories: 77, protein: 2, fat: 0.1, carbs: 17 },
+  { name: "Broccoli", namehe: "ברוקולי", calories: 31, protein: 2.5, fat: 0.4, carbs: 6 },
+  { name: "Garlic", namehe: "שום", calories: 149, protein: 6.4, fat: 0.5, carbs: 33 },
+];
 
 function MeatBuilder({ language }) {
   const [selectedIngredients, setSelectedIngredients] = useState([]);
@@ -52,14 +52,16 @@ function MeatBuilder({ language }) {
         </div>
       </div>
       <div className="curly-frame">
-      <h2>{language === 'en' ? 'Your meal' : 'המנה שלך'}</h2>
-      {selectedIngredients.map((ingredient, index) => (
+        <h2>{language === 'en' ? 'Your meal' : 'המנה שלך'}</h2>
+        {selectedIngredients.map((ingredient, index) => (
           <div key={index} className="selected-ingredient">
             <span>{language === 'en' ? ingredient.name : ingredient.namehe}</span>
-            <input 
-              type="number" 
-              value={ingredient.amount} 
-              onChange={(e) => updateAmount(index, parseInt(e.target.value))} 
+            <input
+              className="amount-input"
+              type="number"
+              value={ingredient.amount}
+              onChange={(e) => updateAmount(index, parseInt(e.target.value))}
+              min="0"
             />
             <span>g</span>
             <button onClick={() => removeIngredient(index)}>

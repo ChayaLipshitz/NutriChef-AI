@@ -6,7 +6,6 @@ import SoupBuilder from './components/SoupBuilder';
 import MeatBuilder from './components/MeatBuilder';
 import FishBuilder from './components/FishBuilder';
 import ToastBuilder from './components/ToastBuilder';
-// import './App.css';
 
 function AppClaude() {
   const [language, setLanguage] = useState('en');
@@ -17,7 +16,7 @@ function AppClaude() {
 
   return (
     <Router>
-      <div className={`App ${language}`}>
+      <div className={`App-claude ${language}`}>
         <nav>
           <ul>
             <li><Link to="/salad">{language === 'en' ? 'Salad' : 'סלט'}</Link></li>
