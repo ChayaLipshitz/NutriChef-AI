@@ -36,21 +36,21 @@ Whether you're a health enthusiast, a curious cook, or someone interested in AI 
 To get started with NutriChef, follow these steps:
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone [https://github.com/ChayaLipshitz/NutriChef-AI.git](https://github.com/ChayaLipshitz/NutriChef-AI.git)
-   \`\`\`
+   ```
 2. Navigate to the project directory:
-   \`\`\`bash
+   ```bash
    cd nutrichef
-   \`\`\`
+   ```
 3. Install the dependencies:
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 4. Run the app:
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
 
 ## Switching Between GPT and Claude Components
 
@@ -58,7 +58,7 @@ To switch between the GPT and Claude components in NutriChef, follow these steps
 
 1. Open the \`index.js\` file in the project directory.
 2. Choose the desired component (GPT or Claude) by uncommenting the respective import statement and commenting out the other. For example:
-   \`\`\`javascript
+   ```javascript
    // Choose GPT component
     {/* <AppClaude/> */}
     <AppGPT/>
@@ -66,9 +66,9 @@ To switch between the GPT and Claude components in NutriChef, follow these steps
    // Import GPT component's CSS
    import './GPT/styles.css'
    // import './cluade/App.css';
-   \`\`\`
+   ```
    To switch to Claude, simply reverse the comments:
-   \`\`\`javascript
+   ```javascript
    // Choose GPT component
    <AppClaude/>
     {/* <AppGPT/> */}
@@ -76,12 +76,12 @@ To switch between the GPT and Claude components in NutriChef, follow these steps
    // Import GPT component's CSS
    //  import './GPT/styles.css'
    import './cluade/App.css';
-   \`\`\`
+   ```
 
 3. Save the \`index.js\` file and restart the app:
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
 
 ## Contributing
 
