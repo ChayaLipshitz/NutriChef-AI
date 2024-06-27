@@ -41,7 +41,7 @@ To get started with NutriChef, follow these steps:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd nutrichef
+   cd NutriChef-AI/salad
    ```
 3. Install the dependencies:
    ```bash
