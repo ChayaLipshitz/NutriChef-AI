@@ -2,7 +2,9 @@
 # Claude VS GPT Natural Language Programming
 # NutriChef
 
-**NutriChef** is an innovative app designed to showcase the capabilities of advanced NLP (Natural Language Processing) programs, specifically Claude and GPT. The main purpose of NutriChef is to demonstrate how these AI technologies can assist users in creating personalized meals by selecting ingredients and providing detailed nutritional information.
+**NutriChef** is an innovative app designed to showcase the capabilities of advanced NLP (Natural Language Processing) programs, specifically Claude and GPT. The main purpose of NutriChef is to demonstrate how these AI technologies can assist users in creating personalized meals by selecting ingredients and providing detailed nutritional information. 
+
+Additionally, the development of NutriChef serves as a critical testbed to evaluate the natural language programming capabilities of GPT-4 and Claude. Through this project, we have conducted a comprehensive examination of both AI tools in terms of development time, prompt efficiency, and code performance.
 
 ## Key Features
 
@@ -31,6 +33,16 @@ NutriChef is not just a meal planning tool; it is a platform to explore the rema
 
 Whether you're a health enthusiast, a curious cook, or someone interested in AI technology, NutriChef offers a unique blend of culinary creativity and cutting-edge AI, making it the perfect app to discover the future of intelligent meal planning.
 
+## Development and Examination
+
+The development of NutriChef was also aimed at testing the capabilities of GPT-4 and Claude in natural language programming. The results of this examination are noteworthy:
+
+- **Development Time**: The development process using Claude took half the time compared to GPT-4.
+- **Prompt Efficiency**: Claude required only a quarter of the number of prompts needed by GPT-4.
+- **Code Efficiency**: Despite the faster development time and fewer prompts with Claude, the efficiency of GPT-4's code exceeded that of Claude's code.
+
+These findings highlight the strengths and trade-offs between these two powerful NLP tools, providing valuable insights into their practical applications in software development.
+
 ## Getting Started
 
 To get started with NutriChef, follow these steps:
@@ -56,7 +68,7 @@ To get started with NutriChef, follow these steps:
 
 To switch between the GPT and Claude components in NutriChef, follow these steps:
 
-1. Open the \`index.js\` file in the project directory.
+1. Open the `index.js` file in the project directory.
 2. Choose the desired component (GPT or Claude) by uncommenting the respective import statement and commenting out the other. For example:
    ```javascript
    // Choose GPT component
@@ -78,7 +90,7 @@ To switch between the GPT and Claude components in NutriChef, follow these steps
    import './cluade/App.css';
    ```
 
-3. Save the \`index.js\` file and restart the app:
+3. Save the `index.js` file and restart the app:
    ```bash
    npm start
    ```
@@ -86,7 +98,6 @@ To switch between the GPT and Claude components in NutriChef, follow these steps
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute to NutriChef, please fork the repository and create a pull request with your changes.
-
 
 ## Contact
 
