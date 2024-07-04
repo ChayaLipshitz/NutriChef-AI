@@ -16,7 +16,6 @@
 
 3. **AI-Powered Assistance**
    - The app leverages the power of NLP programs Claude and GPT to enhance the user experience.
-   - Users can interact with the AI to get personalized suggestions, optimize ingredient combinations, and receive dietary advice.
 
 4. **Interactive Meal Planning**
    - NutriChef allows users to create a list of all selected ingredients.
